@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.views.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -6,6 +6,8 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+import com.example.newsapp.adapter.PagerAdapter;
+import com.example.newsapp.R;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 

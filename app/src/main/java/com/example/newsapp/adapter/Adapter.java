@@ -1,13 +1,11 @@
-package com.example.newsapp;
+package com.example.newsapp.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +14,9 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.newsapp.api.ModelClass;
+import com.example.newsapp.R;
+import com.example.newsapp.views.webview.webView;
 
 import java.util.ArrayList;
 

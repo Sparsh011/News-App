@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.views.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment; // Make sure that this is import statement used.
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.newsapp.adapter.Adapter;
+import com.example.newsapp.api.ApiUtilities;
+import com.example.newsapp.api.MainNews;
+import com.example.newsapp.api.ModelClass;
+import com.example.newsapp.R;
 
 import java.util.ArrayList;
 

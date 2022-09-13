@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.example.newsapp.views.webview;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+
+import com.example.newsapp.R;
 
 public class webView extends AppCompatActivity {
     TextView tv;

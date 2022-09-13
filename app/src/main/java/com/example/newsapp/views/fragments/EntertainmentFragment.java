@@ -1,5 +1,4 @@
-package com.example.newsapp;
-
+package com.example.newsapp.views.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,28 +12,34 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.newsapp.adapter.Adapter;
+import com.example.newsapp.api.ApiUtilities;
+import com.example.newsapp.api.MainNews;
+import com.example.newsapp.api.ModelClass;
+import com.example.newsapp.R;
+
 import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HealthFragment extends Fragment {
+public class EntertainmentFragment extends Fragment {
     String api = "6c2421d5b3174ab5b768cc14dbccc3ba";
     Adapter adapter;
     ArrayList<ModelClass> modelClassArrayList;
     String country = "in";
-    private RecyclerView mRecyclerViewOfHealth;
-    private String category = "health";
+    private RecyclerView mRecyclerViewOfEntertainment;
+    private String category = "entertainment";
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.healthfragment, null);
-        mRecyclerViewOfHealth = view.findViewById(R.id.recyclerViewOfHealth);
+        View view = inflater.inflate(R.layout.entertainmentfragment, null);
+        mRecyclerViewOfEntertainment = view.findViewById(R.id.recyclerViewOfEntertainment);
         modelClassArrayList = new ArrayList<>();
-        mRecyclerViewOfHealth.setLayoutManager(new LinearLayoutManager(getContext()));
+        mRecyclerViewOfEntertainment.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new Adapter(getContext(), modelClassArrayList);
-        mRecyclerViewOfHealth.setAdapter(adapter);
+        mRecyclerViewOfEntertainment.setAdapter(adapter);
 
         findNews();
 
@@ -45,11 +50,12 @@ public class HealthFragment extends Fragment {
         ApiUtilities.getApiInterface().getCategoryNews(country, category, 30, api).enqueue(new Callback<MainNews>() {
             @Override
             public void onResponse(Call<MainNews> call, Response<MainNews> response) {
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
                     modelClassArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();
                 }
             }
+
             @Override
             public void onFailure(Call<MainNews> call, Throwable t) {
                 Toast.makeText(getContext(), "unable To Fetch News!", Toast.LENGTH_SHORT).show();

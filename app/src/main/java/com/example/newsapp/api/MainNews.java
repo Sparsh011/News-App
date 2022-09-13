@@ -1,4 +1,6 @@
-package com.example.newsapp;
+package com.example.newsapp.api;
+
+import com.example.newsapp.api.ModelClass;
 
 import java.util.ArrayList;
 

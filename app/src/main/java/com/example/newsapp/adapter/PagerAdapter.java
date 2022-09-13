@@ -1,9 +1,16 @@
-package com.example.newsapp;
+package com.example.newsapp.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.example.newsapp.views.fragments.EntertainmentFragment;
+import com.example.newsapp.views.fragments.HealthFragment;
+import com.example.newsapp.views.fragments.HomeFragment;
+import com.example.newsapp.views.fragments.ScienceFragment;
+import com.example.newsapp.views.fragments.SportsFragment;
+import com.example.newsapp.views.fragments.TechnologyFragment;
 
 public class PagerAdapter extends FragmentPagerAdapter {
     int tabCount;
