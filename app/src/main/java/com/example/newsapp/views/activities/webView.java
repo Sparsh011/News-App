@@ -1,4 +1,4 @@
-package com.example.newsapp.views.webview;
+package com.example.newsapp.views.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

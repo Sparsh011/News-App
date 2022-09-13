@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.newsapp.api.ModelClass;
 import com.example.newsapp.R;
-import com.example.newsapp.views.webview.webView;
+import com.example.newsapp.views.activities.webView;
 
 import java.util.ArrayList;
 
