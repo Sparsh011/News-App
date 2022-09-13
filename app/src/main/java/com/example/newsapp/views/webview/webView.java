@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.newsapp.R;
 
 public class webView extends AppCompatActivity {
+
     TextView tv;
     Toolbar toolbar;
     WebView webView;
