@@ -5,7 +5,7 @@
 <ul>
 <li>Java</li>
 <li>Retrofit</li>
-<li>News API</li>
+<li><a href="https://newsapi.org/">News API</a></li>
 </ul>
 
 <img align="left" src="https://user-images.githubusercontent.com/93155464/173395596-1654ec4a-aa60-41f2-81cd-2492b5215cd9.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="350" />
